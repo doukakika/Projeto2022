@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+#background{
+	
+	position:absolute;
+	background-image: url("../images/1a14.jpg");
+	background-size:cover;
+	background-attachment: fixed
+}
+
+.container{
+	
+	width: 400px;
+	font-size: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.centerbottom{
+	
+	position: absolute;
+	top: 50%;
+	width: 100px;
+	text-align: center;
+}
+
+.box {
+	
+    width: 200px;
+    height: 460px;
+    padding: 4%;
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle;
+	object-position: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.oswald{
+	
+	font-family: 'Oswald', sans-serif;
+	color: black;
+}
+
+.wrapper {
+	min-height: 100%;
+	min-width: 100.9%;
+}
+.containerf{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	reight: 0;
+	left: 0;
+	overflow: auto;
+	background-color: lime;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.border-top-radius{
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}

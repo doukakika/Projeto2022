@@ -1,0 +1,57 @@
+/*@font-face {
+	font-family:'Oswald';
+	src:url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: content-box;
+	
+}
+
+#menu-h{
+	
+	max-width: 900px;
+	background-color: firebrick;
+	border-bottom-right-radius: 25px 50px;
+	border-bottom-left-radius: 25px 50px;
+}
+#menu-h ul{
+	
+	max-width: 800px;
+	font-size: 20px;
+	list-style-type: none;
+	padding: 0;
+	background-color: firebrick;
+}
+
+#menu-h ul li{
+	
+	display: inline;
+}
+
+#menu-h ul li a{
+	
+	color:aliceblue;
+	padding: 20px;
+	display: inline-block;
+	text-decoration: none;
+	transition: background .6s;
+}
+
+#menu-h ul li:nth-last-child(-n+2) a{
+	
+	float: right;
+	background-color: firebrick;
+}
+
+#menu-h ul li a:hover{
+	
+	background-color: darkred;
+}
+
+.nav-bar-fixed-top{
+	position: fixed;
+}

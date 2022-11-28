@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devise, initial-scale=1.0">
+
+	<title>Bem Vindo</title>
+
+	<link rel="stylesheet" href="css/topmenu.css">
+	<link rel="stylesheet" href="css/background.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap-utilities.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap-grid.css.map">
+	<link rel="stylesheet" href="css/chatbot.css">
+
+	<style type="text/css">
+		#menu-h li a {
+			font-family: 'Oswald', sans-serif;
+		}
+
+		html,
+		body {
+			height: 100%;
+			margin: 0
+		}
+	</style>
+	<!--Fonte-->
+</head>
+
+<body>
+	<div class="wrapper row oswald" id="background">
+		<div>
+			<!--Menu no topo-->
+			<div style="position: fixed; width: 100%; height: auto">
+				<nav id="menu-h">
+					<ul style="color:white">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Contato</a></li>
+						<li><a href="cadastro.html">Cadastrar</a></li>
+						<li><a href="entrar.html">Entrar</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--Caixa da Logo-->
+			<div class="container">
+				<br>
+				<br>
+				<br>
+				<!--Logo-->
+				<div class="container "
+					style="background-color: firebrick; width: 500px; border-bottom-right-radius: 100px 200px; border-top-left-radius: 200px 100px; border-top-right-radius: 25px 25px; border-bottom-left-radius: 25px 25px">
+					<strong class="oswald" style="color:white">
+						<b><i style="font-size: 100px;">Dragonfly</i>
+							<br>
+							<i>Car Services</i></b>
+					</strong>
+				</div>
+			</div>
+			<section>
+				<div style="height: 400px"></div>
+				<div class="row">
+					<div class="oswald box" style="background-color:white; color:black; ">
+						<h1 class="oswald" style="font-size: 50px">Sobre</h1>
+						<br>
+						<div style="max-width: 1300px">
+							<h3>A Dragonfly car services é uma empresa que se especializa em manutenção e venda de peças
+								de veículos. Ajudamos nossos clientes a resolverem os problemas de seus veiculos sempre
+								com qualidade e o melhor preço do mercado.
+								Venha conhecer nossos serviços e produtos </h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div>
+				<button class="open-button" onclick="openForm()">Chat</button>
+
+				<div class="chat-popup" id="myForm">
+					<form class="form-container">
+						<h1>Chat</h1>
+
+						<label for="msg"><b>Message</b></label>
+						<textarea placeholder="Escreva aqui.." name="msg" required></textarea>
+						<button onclick="chatbot.getReplay('hello')">Hello</button>
+						<button type="submit" class="btn">Send</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+					</form>
+				</div>
+				<script type="text/javascript" src="js/chatbot.js"></script>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
